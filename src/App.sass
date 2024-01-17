@@ -1,0 +1,301 @@
+$contrastColor: #003049
+
+.app
+  font-family: 'Inter', sans-serif
+  margin: 60px 0
+
+h1, h2, h3, h4
+  margin: 0
+
+// Heading
+.heading
+  text-align: center
+  margin: 150px 20px 60px 20px
+  .title
+    font-size: 46px
+    font-weight: 800
+  .subtitle
+    font-size: 18px
+    color: #6c757d
+
+// TextColor and BackgroundColor input
+.inputContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  box-sizing: border-box
+  border: 1px solid #ddd
+  border-radius: 6px
+  padding: 8px 8px
+
+.hexContainer
+  display: flex
+  width: 100%
+  span
+    font-style: italic
+    padding: 0 3px 0 0
+
+.box
+  min-width: 32px
+  min-height: 32px
+  cursor: pointer
+
+input
+  display: block
+  border: none
+  border-radius: 4px
+  background: #fff
+  outline: none
+  font: inherit
+  text-transform: uppercase
+  width: 100%
+
+input:focus
+  border-color: #4298ef
+
+// Popover Picker
+.picker
+  position: relative
+
+.swatch
+  width: 28px
+  height: 28px
+  border-radius: 8px
+  border: 3px solid #fff
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1)
+  cursor: pointer
+
+.popover
+  position: absolute
+  bottom: calc(100% + 2px)
+  right: 0
+  border-radius: 9px
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15)
+
+.mainContainer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  border: 1px solid #ddd
+  border-radius: 6px
+  margin: 0 20px
+  .pickerContainer
+    flex: 1
+    order: 2
+    padding: 30px
+  .colorPicker
+    margin-bottom: 30px
+  .textPicker
+    margin: 0 0 25px 0
+    h4
+      font-size: 12px
+      font-weight: 500
+      text-transform: uppercase
+      margin: 0 0 10px 0
+  .backgroundPicker
+    h4
+      font-size: 12px
+      font-weight: 500
+      text-transform: uppercase
+      margin: 0 0 10px 0
+
+  // Output display
+  .outputContainer
+    flex: 1
+    text-align: center
+    border-radius: 6px 6px 0 0
+    order: 1
+    padding: 60px 30px
+    .outputTitle
+      font-size: 36px
+      font-weight: 400
+    .outputText
+      font-size: 16px
+      font-weight: 400
+    .outputAuthor
+      font-weight: 600
+      margin: 0
+
+  // Contrast
+  .contrastContainer
+    color: $contrastColor
+    border-radius: 6px
+    .contrastTop
+      background: #c7f9cc
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      text-align: center
+      border-radius: 6px 6px 0 0
+      padding: 30px
+      .contrastRatioNum
+        font-size: 32px
+        font-weight: 600
+        margin-bottom: 20px
+    .contrastScore
+      .scoreTitle
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 10px
+      
+  .contrastBottom
+    color: $contrastColor
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: center
+    margin-top: 2px
+    .smallTextScore,
+    .largeTextScore
+      background: #c7f9cc
+      flex: 1
+      padding: 10px 30px
+    .smallTextScore
+      border-radius: 0
+      margin-bottom: 2px
+    .largeTextScore
+      border-radius: 0 0 6px 6px
+    .smallTextTitle
+      font-size: 14px
+      font-weight: 500
+      margin-bottom: 6px
+
+  // Output examples
+.output-examples-container
+  width: auto
+  margin: 40px
+  border: 1px solid #ddd
+  border-radius: 6px
+  margin-bottom: 100px
+
+  .output-examples-content
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-evenly
+    padding: 30px 0
+
+
+
+
+  .card 
+    width: 250px
+    height: 200px
+    border-radius: 15px
+    background: rgba(105, 13, 197, 0.103)
+    display: flex
+    flex-direction: column
+    position: relative
+    overflow: hidden
+
+  .card::before 
+    content: ""
+    height: 100px
+    width: 100px
+    position: absolute
+    top: -40%
+    left: -20%
+    border-radius: 50%
+    border: 35px solid rgba(255, 255, 255, 0.102)
+    transition: all .8s ease
+    filter: blur(.5rem)
+
+  .text 
+    flex-grow: 1
+    padding: 15px
+    display: flex
+    flex-direction: column
+    color: aliceblue
+    font-weight: 900
+    font-size: 1.2em
+
+  .subtitle 
+    font-size: .6em
+    font-weight: 300
+    folor: rgba(240, 248, 255, 0.691)
+
+  .icons 
+    display: flex
+    justify-items: center
+    align-items: center
+    width: 250px
+    border-radius: 0px 0px 15px 15px
+    overflow: hidden
+      
+  .btn 
+    border: none
+    width: 84px
+    height: 35px
+    background-color: rgba(247, 234, 234, 0.589)
+    display: flex
+    align-items: center
+    justify-content: center
+  .svg-icon 
+    width: 25px
+    height: 25px
+    stroke: rgb(38, 59, 126)
+
+  .btn:hover 
+    background-color: rgb(247, 234, 234)
+
+  .card:hover::before 
+    width: 140px
+    height: 140px
+    top: -30%
+    left: 50%
+    filter: blur(0rem)
+
+
+
+
+@media screen and (min-width: 768px)
+  .app
+    display: flex
+    flex-direction: column
+    justify-content: center
+    max-width: 1000px
+    margin: 0 auto
+
+  .heading
+    margin: 150px 20px 60px 20px
+    
+  .mainContainer
+    flex-direction: row
+    margin: 0 40px
+    .pickerContainer
+      order: 1
+      .colorPicker
+        display: flex
+        flex-direction: row
+        margin-bottom: 30px
+        .textPicker
+          padding: 0 30px 0 0
+          margin: 0
+
+    // Contrast Output
+    .contrastContainer
+      .contrastTop
+        flex-direction: row
+        .contrastRatioNum
+          margin-bottom: 0
+      .contrastBottom
+        flex-direction: row
+        .smallTextScore
+          border-radius: 0 0 0 6px
+          margin: 0 1px 0 0
+        .largeTextScore
+          border-radius: 0 0 6px 0
+          margin: 0 0 0 1px
+
+    .outputContainer
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      border-radius: 0 6px 6px 0
+      order: 2
+      padding: 30px
+    
+  
