@@ -2,11 +2,11 @@
     --main-color: #000;
     --bg-color: #EBD18D;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 200px;
+    width: 260px;
     height: 170px;
     padding: 25px;
     background: var(--bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
   }
   
   .card-five__wrapper {

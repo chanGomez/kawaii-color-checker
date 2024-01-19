@@ -1,9 +1,9 @@
 import React from 'react'
 import "./CardFive.css"
 
-function CardFive() {
+function CardFive({ textColor, backgroundColor}) {
   return (
-    <div className="card-five">
+    <div className="card-five" style={{ background: backgroundColor }}>
     <div className="card-five__wrapper">
         <div className="card-five___wrapper-acounts">
             <div className="card-five__score">+3</div>

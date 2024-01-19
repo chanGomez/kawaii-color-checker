@@ -1,9 +1,16 @@
+.card-three-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .card-three {
     padding: 1rem;
     background-color: #fff;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    max-width: 320px;
-    border-radius: 20px;
+    /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
+    width: 290px;
+    border-radius: 15px;
+    height: 155px;
+    border: 1px #ddd solid;
   }
   
   .card-three-title {

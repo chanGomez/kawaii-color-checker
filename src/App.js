@@ -13,6 +13,7 @@ import CardFour from "./components/OutputExamples/CardFour/CardFour";
 import CardFive from "./components/OutputExamples/CardFive/CardFive";
 import CardSix from "./components/OutputExamples/CardSix/CardSix";
 import Search from "./components/OutputExamples/Search/Search";
+import Slider from "./components/Slider/Slider";
 
 const App = () => {
   const [textColor, setTextColor] = useState("#111169");
@@ -34,20 +35,23 @@ const App = () => {
         </div>
         <Output textColor={textColor} backgroundColor={backgroundColor} />
       </div>
+
+      <Slider/>
+
       <div className="output-examples-container">
         <div className="output-examples-content">
           <div className="div1">
-            <CardOne />
-            <CardThree />
+            <CardOne textColor={textColor} backgroundColor={backgroundColor}/>
+            <CardThree textColor={textColor} backgroundColor={backgroundColor}/>
           </div>
           <div className="div2">
-            <Search/>
-            <CardFive />
-            <CardFour />
+            <Search textColor={textColor} backgroundColor={backgroundColor}/>
+            <CardFive textColor={textColor} backgroundColor={backgroundColor}/>
+            <CardFour textColor={textColor} backgroundColor={backgroundColor}/>
           </div>
           <div className="div3">
-            <CardSix />
-            <CardTwo />
+          <CardTwo textColor={textColor} backgroundColor={backgroundColor}/>
+            <CardSix textColor={textColor} backgroundColor={backgroundColor}/>
           </div>
         </div>
       </div>

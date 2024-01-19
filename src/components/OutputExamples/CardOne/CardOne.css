@@ -1,22 +1,24 @@
 .card-client {
-    background: #2cb5a0;
+    /* background: #2cb5a0; */
     width: 13rem;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 4px solid #7cdacc;
-    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
-    border-radius: 10px;
+    /* box-shadow: 0 6px 10px rgba(207, 212, 222, 1); */
+    border-radius: 15px;
     text-align: center;
     color: #fff;
     font-family: "Poppins", sans-serif;
     transition: all 0.3s ease;
   }
+/* .card-client:hover{
+  transform: translateY(-10px) !important;
+} */
   
-  .card-client:hover {
+  /* .card-client:hover {
     transform: translateY(-10px);
-  }
+  } */
   
   .user-picture {
     overflow: hidden;
@@ -49,14 +51,14 @@
     font-size: 16px;
   }
   
-  .social-media:before {
+  /* .social-media:before {
     content: " ";
     display: block;
     width: 100%;
     height: 2px;
     margin: 20px 0;
     background: #7cdacc;
-  }
+  } */
   
   .social-media a {
     position: relative;
@@ -73,9 +75,19 @@
     width: 1.1rem;
     fill: currentColor;
   }
+
+  .social-media{
+    /* border-top: 1px solid #ddd; */
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    padding-top: 20px;
+  }
   
   /*-- Tooltip Social Media --*/
-  .tooltip-social {
+  /* .tooltip-social {
     background: #262626;
     display: block;
     position: absolute;
@@ -90,9 +102,9 @@
     transform: translate(-50%, -90%);
     transition: all 0.2s ease;
     z-index: 1;
-  }
+  } */
   
-  .tooltip-social:after {
+  /* .tooltip-social:after {
     content: " ";
     position: absolute;
     bottom: 1px;
@@ -101,13 +113,13 @@
     border-width: 10px 10px 0 10px;
     border-color: transparent;
     transform: translate(-50%, 100%);
-  }
+  } */
   
-  .social-media a .tooltip-social:after {
+  /* .social-media a .tooltip-social:after {
     border-top-color: #262626;
   }
   
   .social-media a:hover .tooltip-social {
     opacity: 1;
     transform: translate(-50%, -130%);
-  }
+  } */
