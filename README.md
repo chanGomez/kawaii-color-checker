@@ -1,6 +1,5 @@
 # Cute Color Contrast Checker
-
-This pr
+With this project I was able to see how color swatches where implimented and learn how luminance is calculated. And was able to refine my skills in display flex and grid to create a bento box style layouts. 
 
 ## Feedback on contrast ratio and compliance levels 
 ![inspect the perfect combination of your colors](./public/./Images/Preview-1.png "inspect the perfect combination of your colors")
