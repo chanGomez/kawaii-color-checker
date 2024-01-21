@@ -1,4 +1,4 @@
-/* this is a recreation of twitter search in css */
+
 .search-form {
     --input-text-color: #fff;
     --input-bg-color: #283542;
@@ -29,11 +29,9 @@
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   }
   /* label styling */
   .search-search {
-    /* width: 100%; */
     padding: 0.8em;
     height: 40px;
     padding-inline: var(--inline-padding-of-input);
@@ -42,7 +40,6 @@
   }
   
   .search-search,.search-close-btn {
-    /* position: absolute; */
   }
   /* styling search-icon */
   .search-search {
@@ -101,11 +98,3 @@
     opacity: 1;
     visibility: visible;
   }
-  /* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
-  /* input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
-    -webkit-transition-delay: 9999s;
-  } */
