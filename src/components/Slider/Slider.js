@@ -3,9 +3,6 @@ import "./Slider.css";
 
 function Slider({ toggleActive, setToggleActive }) {
 
-  function hangleChange(){
-    setToggleActive(!toggleActive)
-  }
   return (
     <div className="slider-container">
       <div>
