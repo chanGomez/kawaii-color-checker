@@ -36,10 +36,10 @@ function CardThree({ textColor, backgroundColor }) {
         </div>
         <div className="data">
           <p style={{ color: textColor }}>39,500</p>
-
-          <div className="range" style={{ background: textColor}}>
-            <div className="fill" style={{ background: textColor }} ></div>
-          </div>
+          <div className="card-five__progress"> 
+    <div class="progress" style={{ background: backgroundColor}}>
+	  <div class="progress-done" style={{ background: textColor}}>
+	  </div></div></div>
         </div>
       </div>
     </div>

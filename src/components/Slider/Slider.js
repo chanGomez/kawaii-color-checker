@@ -1,17 +1,33 @@
 import React from "react";
 import "./Slider.css";
 
-function Slider() {
+function Slider({ toggleActive, setToggleActive }) {
+
+  function hangleChange(){
+    setToggleActive(!toggleActive)
+  }
   return (
-    <div className="slider-radio-inputs">
-      <label className="slider-radio">
-        <input type="slider-radio" name="radio" checked="" id="slider-radio-input" />
-        <span className="slider-name">HTML</span>
-      </label>
-      <label className="slider-radio">
-        <input type="radio" name="radio" id="slider-radio-input"/>
-        <span className="slider-name">React</span>
-      </label>
+    <div class="slider-container">
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radio"
+            checked={toggleActive}
+            onClick={() => setToggleActive(!toggleActive)}
+          />
+          <span>Elements</span>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radio"
+            checked={!toggleActive}
+            onClick={() => setToggleActive(!toggleActive)}
+          />
+          <span>Site</span>
+        </label>
+      </div>
     </div>
   );
 }

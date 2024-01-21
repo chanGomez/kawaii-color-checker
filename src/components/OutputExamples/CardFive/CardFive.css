@@ -92,20 +92,26 @@
     color: var(--main-color);
   }
   
-  .card-five__progress progress {
+  .progress {
+    backdrop-filter: invert(80%);
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 0;
+    height: 8px;
     width: 100%;
-    height: 4px;
-    border-radius: 100px;
   }
   
-  .card-five__progress progress::-webkit-progress-bar {
-    background-color: #00000030;
-    border-radius: 100px;
-  }
-  
-  .card-five__progress progress::-webkit-progress-value {
-    background-color: var(--main-color);
-    border-radius: 100px;
+  .progress-done {
+    backdrop-filter: invert(80%);
+    background: #641414;
+    border-radius: 20px;
+    color: #c22d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
   }
   
   

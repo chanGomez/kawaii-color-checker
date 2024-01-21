@@ -85,20 +85,22 @@ input:focus
     order: 2
     padding: 30px
   .colorPicker
-    margin-bottom: 30px
   .textPicker
     margin: 0 0 25px 0
     h4
-      font-size: 12px
+      font-size: 15px
       font-weight: 500
       text-transform: uppercase
       margin: 0 0 10px 0
+      letter-spacing: .5px
   .backgroundPicker
     h4
-      font-size: 12px
+      font-size: 15px
       font-weight: 500
       text-transform: uppercase
       margin: 0 0 10px 0
+      letter-spacing: .7px
+
 
   // Output display
   .outputContainer
@@ -205,18 +207,22 @@ input:focus
     margin: 0 auto
 
   .heading
-    margin: 150px 20px 60px 20px
+    margin: 100px 20px 60px 20px
     
   .mainContainer
     flex-direction: row
     margin: 0 40px
     .pickerContainer
-      order: 1
+      gap: 30px
+      display: grid
+      grid-template-columns: 1fr 1fr
       .colorPicker
         display: flex
-        flex-direction: row
-        margin-bottom: 30px
+        flex-direction: column
+        max-width: 200px
+        gap: 20px
         .textPicker
+          width: 100%
           padding: 0 30px 0 0
           margin: 0
 

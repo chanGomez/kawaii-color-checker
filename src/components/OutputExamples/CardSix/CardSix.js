@@ -13,11 +13,11 @@ function CardSix({textColor, backgroundColor}) {
   </div>
   <div className="card-six-field">
     <label for="card-six-username" style={{ color: textColor }}>Username</label>
-    <input className="card-six-input" name="username" type="text" placeholder="Username" id="username"/>
+    <input className="card-six-input" name="username" type="text" id="username" style={{ background: "white", border: `1px solid ${textColor}` }}/>
   </div>
   <div className="card-six-field">
     <label for="card-six-password" style={{ color: textColor }}>Password</label>
-    <input className="card-six-input" name="user_password" type="password" placeholder="Password" id="password"/>
+    <input className="card-six-input" name="user_password" type="password" id="password" style={{ background: "white", border: `1px solid ${textColor}` }}/>
   </div>
   <div className="card-six-field">
     <button className="card-six-button" style={{ color: backgroundColor, background: textColor }}>Login</button>

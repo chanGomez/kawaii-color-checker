@@ -1,71 +1,29 @@
-.card-four {
-    width: 270px;
-    height: 220px;
+.card-four-container {
+    width: 230px;
+    height: 180px;
     background: #171717;
-    transition: 1s ease-in-out;
+    /* transition: 1s ease-in-out; */
     /* clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px); */
     /* border-top-right-radius: 20px;
     border-bottom-left-radius: 20px; */
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
+
+.outputTitle{
+  font-size: 28px;
+}
+
+.outputText{
+  padding-top: 10px;
+  font-style: italic;
+  letter-spacing: 0.6px;
+}
+
+.outputAuthor{
+  display: flex;
+  justify-content: right;
+}
   
-  .card-four span {
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    display: block;
-    font-size: 1em;
-  }
-  
-  .card-four .card-four-info {
-    font-weight: 400;
-    color: white;
-    display: block;
-    text-align: center;
-    font-size: 0.72em;
-    margin: 1em;
-  }
-  
-  .card-four .card-four-img {
-    width: 4.8em;
-    height: 4.8em;
-    background: white;
-    border-radius: 15px;
-    margin: auto;
-  }
-  
-  .card-four .card-four-share {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-  }
-  
-  .card-four a {
-    color: white;
-    transition: .4s ease-in-out;
-  }
-  
-  .card-four a:hover {
-    color: red;
-  }
-  
-  .card-four button {
-    padding: 0.8em 1.7em;
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    transition: .4s ease-in-out;
-  }
-  
-  .card-four button:hover {
-    background: red;
-    color: white;
-    cursor: pointer;
-  }
