@@ -6,7 +6,8 @@
     padding: 0 20px;
     color: #fff;
     box-sizing: border-box;
-    border-bottom: 2px solid #ddd;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-family: 'Libre Franklin', sans-serif;
     
 }

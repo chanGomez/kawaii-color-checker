@@ -14,8 +14,8 @@ function CardFive({ textColor, backgroundColor}) {
     <div className="card-five__subtitle" style={{ color: textColor }}>Building projects to elevate your design skills</div>
     <div className="card-five__indicator" style={{ color: textColor }}><span className="card-five__indicator-amount">135</span> Works / <span className="card-five__indicator-percentage">45%</span></div>
     <div className="card-five__progress"> 
-    <div class="progress" style={{ background: backgroundColor}}>
-	  <div class="progress-done" style={{ background: textColor}}>
+    <div className="progress" style={{ background: backgroundColor}}>
+	  <div className="progress-done" style={{ background: textColor}}>
 	  </div></div></div>
 </div>
   )

@@ -4,14 +4,14 @@ import "./MoblieNav.css"
 function MoblieNav( {textColor, backgroundColor} ) {
   return (
     <div className='moblie-nav-container' style={{ background: backgroundColor }}>
-  <label title="home" for="home" class="label">
-    <input id="home" name="page" type="radio" checked=""/>
+  <label title="home" htmlFor="home" className="label">
+    <input id="home" name="page" type="radio"/>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 21 20"
       height="20"
       width="21"
-      class="icon home"
+      className="icon home"
     >
       <path
         fill={textColor}
@@ -19,7 +19,7 @@ function MoblieNav( {textColor, backgroundColor} ) {
       ></path>
     </svg>
   </label>
-  <label title="cart" for="cart" class="label">
+  <label title="cart" htmlFor="cart" className="label">
     <input id="cart" name="page" type="radio" />
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ function MoblieNav( {textColor, backgroundColor} ) {
       viewBox="0 0 18 20"
       height="20"
       width="18"
-      class="icon cart"
+      className="icon cart"
     >
       <path
         fill={textColor}
@@ -35,7 +35,7 @@ function MoblieNav( {textColor, backgroundColor} ) {
       ></path>
     </svg>
   </label>
-  <label title="favorite" for="favorite" class="label">
+  <label title="favorite" htmlFor="favorite" className="label">
     <input id="favorite" name="page" type="radio" />
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ function MoblieNav( {textColor, backgroundColor} ) {
       viewBox="0 0 20 18"
       height="18"
       width="20"
-      class="icon favorite"
+      className="icon favorite"
     >
       <path
         fill={textColor}
@@ -51,7 +51,7 @@ function MoblieNav( {textColor, backgroundColor} ) {
       ></path>
     </svg>
   </label>
-  <label title="notifications" for="notifications" class="label">
+  <label title="notifications" htmlFor="notifications" className="label">
     <input id="notifications" name="page" type="radio" />
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ function MoblieNav( {textColor, backgroundColor} ) {
       viewBox="0 0 16 20"
       height="20"
       width="16"
-      class="icon history"
+      className="icon history"
     >
       <path
         fill={textColor}

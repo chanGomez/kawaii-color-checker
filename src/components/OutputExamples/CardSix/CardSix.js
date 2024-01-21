@@ -12,11 +12,11 @@ function CardSix({textColor, backgroundColor}) {
     <h1 className="card-six-form_heading" style={{ color: textColor }}>Sign in</h1>
   </div>
   <div className="card-six-field">
-    <label for="card-six-username" style={{ color: textColor }}>Username</label>
+    <label htmlFor="card-six-username" style={{ color: textColor }}>Username</label>
     <input className="card-six-input" name="username" type="text" id="username" style={{ background: "white", border: `1px solid ${textColor}` }}/>
   </div>
   <div className="card-six-field">
-    <label for="card-six-password" style={{ color: textColor }}>Password</label>
+    <label htmlFor="card-six-password" style={{ color: textColor }}>Password</label>
     <input className="card-six-input" name="user_password" type="password" id="password" style={{ background: "white", border: `1px solid ${textColor}` }}/>
   </div>
   <div className="card-six-field">

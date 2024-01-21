@@ -7,14 +7,14 @@ function Slider({ toggleActive, setToggleActive }) {
     setToggleActive(!toggleActive)
   }
   return (
-    <div class="slider-container">
+    <div className="slider-container">
       <div>
         <label>
           <input
             type="radio"
             name="radio"
             checked={toggleActive}
-            onClick={() => setToggleActive(!toggleActive)}
+            onChange={() => setToggleActive(!toggleActive)}
           />
           <span>Elements</span>
         </label>
@@ -23,7 +23,7 @@ function Slider({ toggleActive, setToggleActive }) {
             type="radio"
             name="radio"
             checked={!toggleActive}
-            onClick={() => setToggleActive(!toggleActive)}
+            onChange={() => setToggleActive(!toggleActive)}
           />
           <span>Site</span>
         </label>
